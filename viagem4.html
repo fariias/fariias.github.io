@@ -6,9 +6,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta id="description" name="description" content="">
-    <meta name="author" content="Jungle Turismo">
-    <meta property="og:image" content="logo2.png"/>
+    <meta property=”og:title” content="Jungle Turismo: 'viagem'"/>
+    <meta property=”og:description” id="description" content=""/>
+    <meta property=”og:image” content=”http://jungleturismo.com.br/logo2.png“/>
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="600">
+    <meta property=”og:url” id="url_site" content=””/>
+    <meta property=”og:site_name” content="Jungle Turismo"/>
 
     <title>Jungle Turismo</title>
 
@@ -72,14 +77,9 @@
         function mudar(){
         document.getElementById("wpp").href = "whatsapp://send?text=Confira essa viagem no nosso site: "+url_atual;
         document.getElementById("description").content = "Viaje conosco, viaje com a Jungle Turismo! Confira esta viagem: "+viagem;
+        document.getElementById("url_site").content = url_atual;
     }
-    function cont(){
-       var conteudo = document.getElementById('print').innerHTML;
-       tela_impressao = window.open('about:blank');
-       tela_impressao.document.write(conteudo);
-       tela_impressao.window.print();
-       tela_impressao.window.close();
-    }
+    
     </script>
 </head>
 
