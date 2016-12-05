@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
 
@@ -36,7 +36,7 @@
             font-family: secret;
             src: url('fonts/Roboto-Thin.ttf');
         }
-        #titulo{
+        .tit{
             text-transform: none;
             color: rgb(30, 60, 108);
             font-family: secret;
@@ -73,7 +73,7 @@
     </style>
     <script type="text/javascript">   
         var url_atual = window.location.href;
-        var viagem = "Excursão Conde/PB";
+        var viagem = "Thermas Hotel e Resort - Mossoró/RN"
         function mudar(){
         document.getElementById("wpp").href = "whatsapp://send?text=Confira essa viagem no nosso site: "+url_atual;
         document.getElementById("description").content = "Viaje conosco, viaje com a Jungle Turismo! Confira esta viagem: "+viagem;
@@ -134,7 +134,7 @@
             <div style="padding-bottom:20px; background-color: white;" class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
               
 
-               <h1 id="titulo">Thermas Hotel e Resort - Mossoró/RN</h1>
+               <h1 class="tit" id="viagem_name" name="Thermas Hotel e Resort - Mossoró/RN">Thermas Hotel e Resort - Mossoró/RN</h1>
                <!-- OS CAMPOS ESTÃO DIGITADOS EM LETRAS MINÚSCULAS PQ O CSS OS DEIXA MAÚSCULAS -->
                <hr>
                <h3>PERÍODO:</h3>
@@ -149,7 +149,7 @@
                1 criança free<br>
                Para mais informaçõe leia a imagem em anexo ou entre em contato conosco</p>
                <hr>
-               <h1 id="titulo">Pagamento</h1>
+               <h1 class="tit">Pagamento</h1>
                <hr>
                <h3>A partir de:</h3>
                <h2 style="color: rgb(30, 60, 108)">06x R$ 39,50</h2>
@@ -158,7 +158,7 @@
                <hr>
               
 
-               <h1 id="titulo">Contatos</h1>
+               <h1 class="tit">Contatos</h1>
                <div style="text-align: center; width: 100%;" class="container">
                   <img width="50px" src="img/em.png">
                      <p class="contato" style="clor: rgb(36, 104, 255)">
@@ -179,7 +179,7 @@
                      <a target="blank" href="http://facebook.com/jungleturismo"><img width="50px" src="img/fb.png"></a>
                  </div>
                <hr>
-                <h1 style="text-align: center;" id="titulo">Compartilhe esse pacote</h1>
+                <h1 style="text-align: center;" class="tit">Compartilhe esse pacote</h1>
                <div style="text-align: center; width: 50%;" class="container">
                     <div class="row">  
                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
