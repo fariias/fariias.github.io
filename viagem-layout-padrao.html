@@ -80,28 +80,6 @@
         document.getElementById("description").content = "Viaje conosco, viaje com a Jungle Turismo! Confira esta viagem: "+viagem;
         document.getElementById("url_site").content = url_atual;
     }
-    function imprimir() {
-      var codArquivo = document.getElementById('banner').href
-      var w = window.open();
-      w.document.open();
-      w.document.write('<html>');
-      w.document.write('<head>');
-      w.document.write('<meta http-equiv="Content-Type" content="image/png" >');
-      w.document.write('</head>');
-      w.document.write('<body>');
-      w.document.write('<img src="' + codArquivo + '" />');     
-      w.document.write('</body>');
-      w.document.write('</html>');
-      w.print();
-      w.document.close();
-      w.close();
-    }
-        
-    window.onload = function(){
-      document.getElementById('impressora').onclick = function(){
-      imprimir('http://forum.imasters.com.br/uploads/profile/photo-91440.png?_r=1377869312');
-    }
-    }
     </script>
 </head>
 
@@ -209,7 +187,7 @@
                <div style="text-align: center; width: 50%;" class="container">
                     <div class="row">  
                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                         <a id="impressora" href="#"><img width="50px" src="img/impressora.png"></a>
+                         <a href="#"><img width="50px" src="img/impressora.png"></a>
                        </div>
                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                          <a id="wpp" href=""><img width="50px" src="img/wpp2.png"></a>
