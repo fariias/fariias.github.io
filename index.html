@@ -42,6 +42,15 @@
         100% { opacity: 1; }
         }
 
+        #linha{
+            width: 100%;
+            height: 30px;
+            background-color: rgb(30, 60, 108);
+        }
+        #portfolio{
+            padding-top: 80px;
+            padding-bottom: 0px;
+        }
         .fadeIn {
         -webkit-animation: fadeIn 2s ease-in-out;
         -moz-animation: fadeIn 2s ease-in-out;
@@ -84,7 +93,6 @@
               document.getElementById('cabeca').style.backgroundRepeat = "repeat";
               document.getElementById('cabeca').style.backgroundPosition = "left top";
 
-         
               currentImage = currentImage + 1;
               if (currentImage > (imageCount-1))
               { 
@@ -353,9 +361,11 @@
                 </div>
         </div>
     </section>
+    
 
+    </div>
     <section id="portfolio" class="bg-light-gray ultimas">
-        <div style="margin-top: -70px;" class="container">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Últimas Viagens</h2>
