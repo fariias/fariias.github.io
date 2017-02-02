@@ -27,7 +27,7 @@
     <style type="text/css">
         @-webkit-keyframes fadeIn {
         0% { opacity: 0; }
-        100% { opacity: 1; } 
+        100% { opacity: 1; }
         }
         @-moz-keyframes fadeIn {
         0% { opacity: 0;}
@@ -68,37 +68,37 @@
         var imageCount = 0;
         var currentImage = 0;
         var images = new Array();
-         
+
         images[0] = 'img/foz.png';
         images[1] = 'img/rj.png';
         images[2] = 'img/careca.jpg';
         images[3] = 'img/gramado.png';
 
-         
+
         var preLoadImages = new Array();
         for (var i = 0; i < images.length; i++)
         {
            if (images[i] == "")
               break;
-         
+
            preLoadImages[i] = new Image();
            preLoadImages[i].src = images[i];
            imageCount++;
         }
-         
+
         function startSlideShow()
         {
            if (document.getElementById && imageCount > 0)
            {
 
-              document.getElementById('cabeca').style.backgroundImage = "url("+images[currentImage]+")";    
+              document.getElementById('cabeca').style.backgroundImage = "url("+images[currentImage]+")";
               document.getElementById('cabeca').style.backgroundAttachment = "fixed";
               document.getElementById('cabeca').style.backgroundRepeat = "repeat";
               document.getElementById('cabeca').style.backgroundPosition = "left top";
 
               currentImage = currentImage + 1;
               if (currentImage > (imageCount-1))
-              { 
+              {
                  currentImage = 0;
               }
               setTimeout('startSlideShow()', 4000);
@@ -154,7 +154,7 @@
     	</div>
     </nav>
 
-    
+
     <!-- Header -->
     <header id="cabeca">
         <div class="container">
@@ -207,7 +207,7 @@
 	                    </div>
                     </div>
                 </div>
- 
+
                 <div style="height: 100%; background-color: white;" class="col-md-6 col-sm-6 portfolio-item">
                     <div class="row">
 	                    <div style="padding: 0;" class="col-md-8">
@@ -238,7 +238,7 @@
                     </div>
                 </div>
         </div>
-            
+
         <div class="row">
              <!-- Nova linha inserida -->
                 <div style="height: 100%; background-color: white;" class="col-md-6 col-sm-6 portfolio-item">
@@ -398,24 +398,24 @@
                             <div id="carousel-id" class="carousel slide" data-ride="carousel" data-interval="3200">
                                 <div class="carousel-inner">
                                     <div class="item active">
-                                        <img src="img/reveillon/reve3.png" width="100%">
+                                        <img src="img/mussulo/mussulo3.png" width="100%">
                                     </div>
                                     <div class="item">
-                                        <img src="img/reveillon/reve4.png" width="100%">
+                                        <img src="img/mussulo/mussulo4.png" width="100%">
                                     </div>
                                     <div class="item">
-                                        <img src="img/reveillon/reve5.png" width="100%">
+                                        <img src="img/mussulo/mussulo5.png" width="100%">
                                     </div>
                                     <div class="item">
-                                        <img src="img/reveillon/reve6.png" width="100%">
+                                        <img src="img/mussulo/mussulo6.png" width="100%">
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div style="max-height: 100%; padding-top: 1%;" class="col-md-4">
                             <div style="text-align: center; text-transform: none;" align="center" class="row">
-                                <p><h4 style="font-size: 25px;">Reveillón 2017</h4>
-                                <p style="font-size: 18px;">Fim de ano do seu jeito</p>
+                                <p><h4 style="font-size: 25px;">Mussulo Resort</h4>
+                                <p style="font-size: 18px;">O melhor resort da Paraíba</p>
                                 <a href="reveillon.html"><button type="button" style="padding: 10px 30px 10px 30px;font-size: 20px; background-color: rgb(255, 193, 66); border-color: rgb(255, 193, 66);" class="btn btn-lg btn-success">Quero Ir!</button></a></p>
                             </div>
                         </div>
@@ -423,7 +423,7 @@
                 </div>
         </div>
     </section>
-    
+
 
     </div>
     <section id="portfolio" class="bg-light-gray ultimas">
