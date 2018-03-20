@@ -112,6 +112,40 @@
     </script>
 </head>
 
+<!-- Modal -->
+<div class="modal fade" id="modalEmail" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="section-header modal-title text-center">Envie-nos um email</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="https://formspree.io/victormenezez15@gmail.com" method="post" name="form">
+                        <div class="form-group">
+                            <label for="inputName">Seu Nome</label>
+                            <input name="Nome" type="text" class="form-control" id="inputName" placeholder="Digite seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail">Email</label>
+                            <input name="_replyto" type="email" class="form-control" id="inputEmail" placeholder="Digite seu Email">
+                            <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email com ninguém.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputTexto">O que você deseja saber?</label>
+                            <textarea name="mensagem" class="form-control" id="inputTexto" rows="3"></textarea>
+                        </div>
+                        <input type="hidden" name="_next" value="http://jungleturismo.com.br/index.html"/>
+                        <input type="hidden" name="_subject" value="Nova dúvida! - jungleturismo.com.br"/>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <input type="submit" name="submit" value="Enviar email" class="btn btn-primary"></input>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
 <body id="page-top" class="index" onload="startSlideShow()">
 
     <!-- Navigation -->
@@ -145,7 +179,9 @@
                     <li>
                         <a class="page-scroll" href=".footer">Contatos</a>
                     </li>
-
+                    <li>
+                        <a class="page-scroll btn btn-primary" data-toggle="modal" data-target="#modalEmail">Envie-nos um email</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
